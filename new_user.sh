@@ -45,4 +45,4 @@ usermod -aG sudo $USERNAME
 echo "$USERNAME ALL=(ALL) ALL" >> /etc/sudoers
 
 # Log out
-logout
+exit
