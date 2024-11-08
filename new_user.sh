@@ -6,6 +6,7 @@ apt install -y sudo
 
 # Prompt for username and password with input validation
 while true; do
+    echo
     read -p "Enter a username for the new user: " USERNAME
     USERNAME=$(echo "$USERNAME" | xargs)  # Trim leading/trailing spaces
 
@@ -17,6 +18,7 @@ while true; do
 done
 
 while true; do
+    echo
     read -s -p "Enter a password for the new user: " PASSWORD
     echo
     if [[ -z "$PASSWORD" ]]; then
