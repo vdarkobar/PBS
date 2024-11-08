@@ -43,3 +43,6 @@ usermod -aG sudo $USERNAME
 
 # Add new user to sudo
 echo "$USERNAME ALL=(ALL) ALL" >> /etc/sudoers
+
+# Log out
+logout
